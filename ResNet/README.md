@@ -8,15 +8,15 @@ For training the model I used Cifar 10 Dataset which contains 60000 images, 4900
 
 ## 3 	The Architecture
 
-All convolutional layers used are with 3 * 3 filter size. The basic Residual block consists of 3 convolutional layers with the input of the block added to the output of the last conv layer before the activation. A RELU activation is used after every convolution. A batch normalization layer is used just after a convolution and befor RELU. DownSampling is done by a ConvLayer with a stride of two. The full architecture is as follows:
-	*1. ConvLayer with 16 filters.<br />
-	*2. ResBlock with 16 filters.<br />
-	*3. ConvLayer with 32 filters and stride of 2.<br />
-	*4. ResBlock with 32 filters.<br />
-	*5. ConvLayer with 64 filters and a stride of 2.<br />
-	*6. ResBlock with 64 filters.<br />
-	*7. AvgPooling layer with pool size 2 * 2 and strides 2 * 2.<br />
-	*8. A fully connected layer with 10 units with a softmax activation for cassification task.<br />
+All convolutional layers used are with 3 * 3 filter size. The basic Residual block consists of 3 convolutional layers with the input of the block added to the output of the last conv layer before the activation. A RELU activation is used after every convolution. A batch normalization layer is used just after a convolution and befor RELU. DownSampling is done by a ConvLayer with a stride of two. The full architecture is as follows:<br />
+	1. ConvLayer with 16 filters.<br />
+	2. ResBlock with 16 filters.<br />
+	3. ConvLayer with 32 filters and stride of 2.<br />
+	4. ResBlock with 32 filters.<br />
+	5. ConvLayer with 64 filters and a stride of 2.<br />
+	6. ResBlock with 64 filters.<br />
+	7. AvgPooling layer with pool size 2 * 2 and strides 2 * 2.<br />
+	8. A fully connected layer with 10 units with a softmax activation for cassification task.<br />
 
 ## 4	Details of Training
 
